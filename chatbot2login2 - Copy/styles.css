@@ -1,0 +1,142 @@
+/* styles.css */
+
+/* Common styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f8;
+    color: #444;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #222;
+}
+
+/* Chat page styles */
+#chatbox {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+#chat-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#chat-form label {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    color: #1a73e8;
+    font-size: 1.1em;
+}
+
+#chat-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #1a73e8;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    font-size: 1.1em;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+#chat-form button {
+    background: #1a73e8;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-size: 1.1em;
+}
+
+#chat-form button:hover {
+    background: #0b53a6;
+}
+
+#chat-form button:active {
+    transform: translateY(1px);
+}
+
+#chat-history {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    max-width: 600px;
+    height: 200px;
+    overflow: auto;
+}
+
+#chat-history p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+b {
+    color: #1a73e8;
+}
+
+hr {
+    margin: 40px auto;
+    max-width: 600px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* Login page styles */
+#loginbox {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #1a73e8;
+}
+
+#login-form button {
+    padding: 10px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #0b53a6;
+}

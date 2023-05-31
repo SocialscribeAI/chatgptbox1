@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Welcome, {{ username }}</h1>
+    <div id="chat-box">
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    </div>
+    <form method="post" action="/chat">
+        <input type="text" id="message" name="message">
+        <input type="submit" value="Send">
+    </form>
+    <a href="/logout">Logout</a>
+</body>
+</html>
